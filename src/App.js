@@ -7,6 +7,7 @@ import {
 
 import "./app.css"
 import Home from "./components/topbar/pages/home/Home";
+import NewUser from "./components/topbar/pages/home/newUser/NewUser";
 import User from "./components/topbar/pages/home/user/User";
 import UserList from "./components/topbar/pages/home/userList/UserList";
 import Sidebar from "./components/topbar/sidebar/Sidebar";
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<Home />}/>
           <Route path="/users" element={<UserList />}/>
           <Route path="/user/:userId" element={<User />}/>
+          <Route path="/newUser" element={<NewUser />}/>
         </Routes>
       </div>
     </BrowserRouter>
