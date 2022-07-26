@@ -10,6 +10,7 @@ import Home from "./components/topbar/pages/home/Home";
 import NewUser from "./components/topbar/pages/home/newUser/NewUser";
 import User from "./components/topbar/pages/home/user/User";
 import UserList from "./components/topbar/pages/home/userList/UserList";
+import Product from "./components/topbar/pages/product/Product";
 import ProductList from "./components/topbar/pages/productList/ProductList";
 import Sidebar from "./components/topbar/sidebar/Sidebar";
 import Topbar from "./components/topbar/Topbar";
@@ -26,8 +27,8 @@ function App() {
           <Route path="/user/:userId" element={<User />}/>
           <Route path="/newUser" element={<NewUser />}/>
           <Route path="/products" element={<ProductList />}/>
-          <Route path="/product/:productId" element={<User />}/>
-          <Route path="/newProduct" element={<NewUser />}/>
+          <Route path="/product/:productId" element={<Product />}/>
+          <Route path="/newproduct" element={<NewUser />}/>
         </Routes>
       </div>
     </BrowserRouter>
